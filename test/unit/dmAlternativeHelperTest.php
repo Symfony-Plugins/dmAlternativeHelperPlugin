@@ -1,6 +1,9 @@
 <?php
 
-require_once realpath(dirname(__FILE__).'/../../../../..') . '/test/unit/helper/dmUnitTestHelper.php';
+$config = getcwd().'/config/ProjectConfiguration.class.php';
+
+require_once $config;
+require_once(dm::getDir().'/dmCorePlugin/test/unit/helper/dmUnitTestHelper.php');
 
 $helper = new dmUnitTestHelper();
 
