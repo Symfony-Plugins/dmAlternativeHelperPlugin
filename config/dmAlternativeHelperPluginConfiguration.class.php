@@ -13,7 +13,7 @@ class dmAlternativeHelperPluginConfiguration extends sfPluginConfiguration
 
   protected function enableHelper()
   {
-    sfConfig::set('sf_standard_helpers', array_unique(array_merge(sfConfig::get('sf_standard_helpers', array()), array('DmAlternativeHelper'))));
+    sfConfig::set('sf_standard_helpers', array_unique(array_merge(sfConfig::get('sf_standard_helpers', array()), array('DmAlternative'))));
   }
 
 }
