@@ -3,7 +3,7 @@
 /*
  * @return dmLinkTag a link to $source
  */
-function _linkTag($source = null)
+function _link($source = null)
 {
   return sfContext::getInstance()->getHelper()->£link($source);
 }

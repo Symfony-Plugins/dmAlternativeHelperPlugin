@@ -31,7 +31,7 @@ $t->is(£('div', 'content'), _tag('div', 'content'), '£ == _tag');
 
 // £link method
 $t->is((string)$templateHelper->£link()->text('home'), (string)$templateHelper->_link()->text('home'), '£link == _link'); 
-$t->is((string)£link()->text('home'), (string)_linkTag()->text('home'), '£link == _link');
+$t->is((string)£link()->text('home'), (string)_link()->text('home'), '£link == _link');
 
 
 $openDiv = '<div>';
