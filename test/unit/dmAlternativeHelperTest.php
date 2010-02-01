@@ -15,7 +15,6 @@ dm::loadHelpers(array('Dm', 'DmAlternative', 'I18N'));
 $t = new lime_test(30);
 
 /*
-
 * $helper is the test helper. It acts as a service container
 * and can provide you all services with its get() method.
 * so here we get the 'helper' service which is the template helper instance
@@ -26,11 +25,11 @@ $templateHelper = $helper->get('helper');
 $t->is(£('div', 'content'), _tag('div', 'content'), '£ == _tag');
 
 // £ method
-$t->is($templateHelper->£('div', 'content'), $templateHelper->_tag('div', 'content'), '£ == _tag');
+$t->is($templateHelper->£('div', 'content'), $templateHelper->tag('div', 'content'), '£ == _tag');
 $t->is(£('div', 'content'), _tag('div', 'content'), '£ == _tag');
 
 // £link method
-$t->is((string)$templateHelper->£link()->text('home'), (string)$templateHelper->_link()->text('home'), '£link == _link'); 
+$t->is((string)$templateHelper->£link()->text('home'), (string)$templateHelper->link()->text('home'), '£link == _link');
 $t->is((string)£link()->text('home'), (string)_link()->text('home'), '£link == _link');
 
 
